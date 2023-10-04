@@ -1,11 +1,11 @@
 .banner{
-    position: absolute;
-    background-image: url('../../assets/images/Banner.png');
+    background-image: url('../../assets/images/banner.jpg');
     width: 100%;
     height: 100vh;
     background-size: cover;
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .header{
@@ -13,13 +13,13 @@
     background: linear-gradient(180deg, rgba(0,0,0,1) 45%, rgba(27,27,27,0.01) 100%); 
     height: 550px;
     width: 100%;
-    display: flex;
-    position: relative;
-    top: 0;
     color: #FFF;
     padding: 0 133px;
 }
 
+.address_container{
+    display: flex;
+}
 .header_number{
     display: flex;
     flex-direction: column;
@@ -64,9 +64,9 @@
 
 .navbar{
     position: absolute;
-    top: 100px;
     left: 133px;
-    right: 509px;
+    width: 1260px;
+    color: #FFF;
     font-size: 2.5rem;
 }
 
@@ -79,7 +79,12 @@
 
 .navbar li{
     border-right: 1px solid #FFF;
-    padding-right: 65px;
+    padding-right: 70px;
+}
+
+.link{
+    color: #FFF;
+    text-decoration: none;
 }
 
 .navbar li:last-child{
@@ -97,17 +102,31 @@
 }
 
 .banner_title{
-    direction: ltr;
     position: absolute;
-    top: 270px;
-    left: 159px;
-    right:944px;
+    left:159px;
+    direction: ltr;
+    margin-top: 166px;
+    width: 818px;
     color: #FFF;
     font-size: 7rem;
 }
 
 .header_logo{
-    position: absolute;
-    top: 248px;
-    right: 324px;
+    margin-top: 100px;
+    margin-right: 191px;
+}
+
+.explore{
+    color: #FFF;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.explore_icon{
+    font-size: 9rem;
+    margin-top: 10px;
 }
