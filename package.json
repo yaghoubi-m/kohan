@@ -9,10 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@photo-sphere-viewer/core": "^5.4.3",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "react-icons": "^4.11.0"
+    "react-icons": "^4.11.0",
+    "react-photo-sphere-viewer": "^3.4.0-psv5.4.0"
   },
   "devDependencies": {
     "eslint": "latest",
