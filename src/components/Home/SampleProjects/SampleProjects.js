@@ -64,8 +64,8 @@ const SampleProjects = () => {
           <CarouselProvider
             className={styles.carousel_con}
             orientation="vertical"
-            naturalSlideWidth={200}
-            naturalSlideHeight={170}
+            naturalSlideWidth={1.5}
+            naturalSlideHeight={1}
             totalSlides={images.length}
           >
             <div className={styles.all_dots}>
