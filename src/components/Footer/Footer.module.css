@@ -1,0 +1,94 @@
+.footer{
+    background-color: #000;
+}
+
+.main_container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 6rem; 
+}
+
+.main_container a, .main_container p{
+    color: #fff;
+    text-decoration: none;
+    font-size: 2.4rem;
+}
+
+.link_container{
+    display: flex;
+    margin-top: 5rem;
+    height: 25rem;
+}
+
+.link_container > div{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: flex-end;
+}
+
+.link_container > div:last-of-type{
+    margin-right: 11rem;
+}
+
+.logo{
+    width: 23rem;
+    height: 32.6rem;
+    
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 5rem;
+}
+
+.contact div{
+    display: flex;  
+    /* justify-content: center; */
+    align-items: center;  
+    gap: 1rem;
+    
+}
+
+.contact p{
+    font-size: 1.7rem;
+}
+
+.icon{
+    color: #FFF;
+    font-size: 3.5rem;
+}
+
+.icons{
+    color: #FFF;
+}
+
+.sec_container{
+    padding: 0 6rem;
+    margin-top: 6rem;
+    display: flex;
+    justify-content: space-between;
+    color: #FFF;
+    font-size: 2.5rem;
+}
+
+.icons_container{
+    display: flex;
+    gap: 2rem;
+}
+
+.line{
+    width: 97%;
+    height: 1px;
+    background-color: #c9c9c9;
+    margin: 3.5rem auto 0;
+}
+
+.copy{
+    color: #8e8e8e;
+    font-size: 1.5rem;
+    padding: 4rem 0;
+    text-align: center;
+}
