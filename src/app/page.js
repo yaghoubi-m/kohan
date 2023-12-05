@@ -17,10 +17,11 @@ export default function Home() {
       <Image360Deg />
       <SampleProjects />
       <Customers />
+      {/* 
       <AboutAbility />
       <Blog />
       <NewsField />
-      <Footer />
+      <Footer /> */}
     </main>
   );
 }

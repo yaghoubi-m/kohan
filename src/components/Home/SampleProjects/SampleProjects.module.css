@@ -15,13 +15,13 @@
 
 .sp_container > p {
     color: #acacac;
-    width: 141rem;
+    width: 90%;
     font-size: 2.5rem;
     text-align: center;
 }
 
 .carousel{
-    width: 141rem;
+    width: 90%;
     /* height: 73rem; */
 }
 
@@ -33,6 +33,7 @@
 .carousel_con{
     display: flex;
 }
+
 .all_dots{
     display: flex;
     flex-direction: column;
@@ -41,9 +42,10 @@
     gap: 2.1rem;
     margin-left: 8.8rem;
 }
+
 .slider{
     width: 100%;
-    height: 73.8rem;
+    height: 80%;
 }
 
 .btn{
@@ -56,5 +58,31 @@
     border-radius: 2rem;
     border: 1px solid #929292;
     padding: 15px 0;
-    margin: 1.8rem 0 7.3rem 0; 
+    margin: 1.8rem 0 7.3rem 0;
+}
+
+@media screen and (max-width:1024px) {
+    .sp_container{
+        margin: 2rem;
+    }
+    .sp_container h3{
+        font-size: 2rem;
+    }
+    .sp_container p{
+        display: none;
+    }
+    .carousel_con{
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        gap: 3rem;
+    }
+    .all_dots{
+        flex-direction: row;
+        justify-content: center;
+        margin: 0;
+    }
+    .btn{
+        width: 60%;
+        font-size: 1rem;
+    }
 }

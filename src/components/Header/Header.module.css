@@ -1,7 +1,11 @@
 .banner{
-    background-image: url('../../assets/images/banner.jpg');
+    /* filter: brightness(70%);   */
+    
+    /* background: linear-gradient(180deg, rgba(0,0,0,1,0.3) 45%, rgba(27,27,27,0.01) 100%); */
+    background: linear-gradient(180deg, rgba(0,0,0,1) 20%, rgba(27,27,27,0.01) 100%),
+     url('../../assets/images/banner.jpg') no-repeat;
     width: 100%;
-    height: 100vh;
+    height: 100vh ;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -9,8 +13,8 @@
 }
 
 .header{
-    background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,1) 45%, rgba(27,27,27,0.01) 100%); 
+    /* background: rgb(0,0,0,0); */
+    /* background: linear-gradient(180deg, rgba(0,0,0,1) 45%, rgba(27,27,27,0.01) 100%);  */
     height: 550px;
     width: 100%;
     color: #FFF;
@@ -18,9 +22,13 @@
 }
 
 .address_container{
+    /* filter: brightness(140%); */
     display: flex;
 }
+
 .header_number{
+    text-decoration: none;
+    color: #FFF;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -65,21 +73,28 @@
 .navbar{
     position: absolute;
     left: 133px;
-    width: 1260px;
+    width: 80%;
     color: #FFF;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 }
 
-.navbar ul{
+.ham{
+    display: none;
+    font-size: 3rem;
+}
+
+.nav_links{
+    width: 100%;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 40px;
     list-style: none;
 }
 
 .navbar li{
     border-right: 1px solid #FFF;
-    padding-right: 70px;
+    padding-right: 40px;
 }
 
 .link{
@@ -95,7 +110,8 @@
     position: absolute;
     top: 250px;
     left: 158px;
-    right: 960px;
+    /* right: 960px; */
+    width: 40%;
     height: 1px;
     background-color: #515151;
     z-index: 1;
@@ -106,14 +122,14 @@
     left:159px;
     direction: ltr;
     margin-top: 166px;
-    width: 818px;
+    width: 40%;
     color: #FFF;
-    font-size: 7rem;
+    font-size: 5rem;
 }
 
 .header_logo{
     margin-top: 100px;
-    margin-right: 191px;
+    margin-right: 5%;
 }
 
 .explore{
@@ -129,4 +145,137 @@
 .explore_icon{
     font-size: 9rem;
     margin-top: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+    .header_address{
+        font-size: 1.4rem;
+    }
+
+    .navbar{
+        font-size: 1.2rem;
+    }
+
+    .banner_title{
+        width: 30%;
+        font-size: 3rem;
+    }
+
+    .header_line__two{
+        width: 30%;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    
+
+    .header{
+        /* background: linear-gradient(180deg, #000 8.85%, rgba(0, 0, 0, 0.00) 80.21%); */
+
+        padding: 0;
+    }
+
+    .header_address, .header_line, .header_line__two{
+        display: none;
+    }    
+
+    .pc{
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 1rem;
+    }
+
+    .header_number{
+        font-size: 1.4rem;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 1rem;
+        height: auto;
+        border-radius: 2rem;
+        
+    }
+
+    .header_number__icon{
+        width: 1.4rem;
+        height: 1.4rem;
+    }
+
+    .header_logo{
+        position: absolute;
+        width: 5.7rem;
+        height: 8.2rem;
+        top: 8.2rem;
+        left: 3.2rem;
+        margin: 0;
+    }
+
+    .navbar{
+        position: relative;
+        left: unset;
+        top: unset;
+        width: 100%;
+        
+        /* width: 50px; */
+        /* height: 0; */
+    }
+
+    .nav_links{
+        /* width: 100%; */
+
+        /* background-color: #fff; */
+        gap: 0;
+        position: absolute;
+        flex-direction: column;
+        overflow: hidden;
+        height: 0;
+    }
+    .ham{
+        display: block;
+    }
+
+    .nav_links_open{
+        height: unset;
+        overflow: unset;
+    }
+
+    .navbar li{ 
+        padding: 0;
+        border: 0;
+    }
+
+    .link{
+        display: block;
+        /* height: 0; */
+        font-size: 1.4rem;
+        padding: 0.5rem;
+    }
+    
+    .banner_title{
+        font-size: 1.6rem;
+        width: 22rem;
+        left: 3.2rem;
+        margin: 0;
+        top: 18.5rem;
+    }
+
+    .explore{
+        font-size: 1rem;
+    }
+
+    .explore_icon{
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banner{
+        height: 32rem;
+    }
 }

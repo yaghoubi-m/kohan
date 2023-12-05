@@ -1,75 +1,51 @@
-'use client';
-import { useRef } from 'react';
-import gsap from 'gsap';
-import styles from './Gallery.module.css';
+import React from 'react';
+import './App.css'; // Import your CSS file for styling
 
-const Gallery = () => {
-  const ref1 = useRef(null);
-  const ref2 = useRef(null);
-  const ref3 = useRef(null);
-  const ref4 = useRef(null);
+const Box = ({ position }) => (
+  <div className="box" style={position}>
+    {/* Your box content goes here */}
+  </div>
+);
 
-  let rqanimfrID = null;
+const App = () => {
+  // Calculate positions for the boxes on the first rectangle
+  const firstRectangleBoxPositions = [
+    { top: 'calc(50% - 25px)', left: 'calc(50% - 25px)' }, // Center
+    { top: '10%', left: '50%' }, // Top center
+    { bottom: '10%', left: '50%' }, // Bottom center
+    { left: '10%', top: '50%' }, // Left middle
+    { right: '10%', top: '50%' }, // Right middle
+    { top: '10%', left: '10%' }, // Top left
+    { top: '10%', right: '10%' }, // Top right
+    { bottom: '10%', left: '10%' }, // Bottom left
+    { bottom: '10%', right: '10%' }, // Bottom right
+  ];
 
-  let xforce = 0;
-  let yforce = 0;
-  const easing = 0.08;
-  const speed = 0.01;
+  // Calculate positions for the boxes on the second rectangle
+  const secondRectangleBoxPositions = Array.from({ length: 16 }, (_, index) => {
+    const angle = (index * 2 * Math.PI) / 16; // Spread the boxes evenly
+    const radius = 'calc(50% - 25px)'; // Adjust as needed
 
-  const manageMouseMove = (e) => {
-    const { movementX, movementY } = e;
-    xforce += movementX * speed;
-    yforce += movementY * speed;
-    if (!rqanimfrID) {
-      rqanimfrID = requestAnimationFrame(animate);
-    }
-  };
+    const top = `calc(50% + ${radius} * ${Math.sin(angle)} - 25px)`;
+    const left = `calc(50% + ${radius} * ${Math.cos(angle)} - 25px)`;
 
-  const lerp = (start, target, amount) => start * (1 - amount) + target * amount;
-
-  const animate = () => {
-    xforce = lerp(xforce, 0, easing);
-    yforce = lerp(yforce, 0, easing);
-    console.log(xforce);
-
-    gsap.set(ref1.current, { x: `+=${xforce}`, y: `+=${yforce}` });
-    gsap.set(ref2.current, { x: `+=${xforce * 0.5}`, y: `+=${yforce * 0.5}` });
-    gsap.set(ref3.current, { x: `+=${xforce * 0.25}`, y: `+=${yforce * 0.25}` });
-    if (Math.abs(xforce) < 0.01) xforce = 0;
-    if (Math.abs(yforce) < 0.01) yforce = 0;
-
-    if (xforce != 0 || yforce != 0) {
-      requestAnimationFrame(animate);
-    } else {
-      cancelAnimationFrame(rqanimfrID);
-      rqanimfrID = null;
-    }
-  };
+    return { top, left };
+  });
 
   return (
-    <section
-      onMouseMove={(e) => {
-        manageMouseMove(e);
-      }}
-      className={styles.container}
-    >
-      <div ref={ref1} className={styles.project_container}>
-        <div className={styles.project}></div>
-        <div className={styles.project}></div>
-        <div className={styles.project}></div>
+    <div className="app">
+      <div className="square">
+        {firstRectangleBoxPositions.map((position, index) => (
+          <Box key={index} position={position} />
+        ))}
       </div>
-      <div ref={ref2} className={styles.project_container}>
-        <div className={styles.project}></div>
-        <div className={styles.project}></div>
-        <div className={styles.project}></div>
+      <div className="bigger-rectangle">
+        {secondRectangleBoxPositions.map((position, index) => (
+          <Box key={index + 9} position={position} />
+        ))}
       </div>
-      <div ref={ref3} className={styles.project_container}>
-        <div className={styles.project}></div>
-        <div className={styles.project}></div>
-        <div className={styles.project}></div>
-      </div>
-    </section>
+    </div>
   );
 };
 
-export default Gallery;
+export default App;

@@ -26,3 +26,19 @@
     width: 30.5rem;
     height: 20.4rem;
 }
+
+@media screen and (max-width: 1440px) {
+    .logo_container{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .customers_container h3{
+        font-size: 1.4rem;
+    }
+
+    .customers_container p{
+        font-size: 1.1rem;
+    }
+}

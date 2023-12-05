@@ -1,6 +1,7 @@
 .container{
     background-color: #F6F6F6;
     margin-top: 11.3rem;
+    width: 100%;
 }
 
 .container p{
@@ -35,5 +36,5 @@
 .container div{
     display: flex;
     justify-content: center;
-    margin-bottom: 6.9rem;
+    padding-bottom: 6.9rem;
 }

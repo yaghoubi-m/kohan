@@ -9,7 +9,7 @@
     font-size: 18rem;
     background-image: url(../../../assets/images/year.png);
     background-repeat: repeat;
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     background-position: -50px -100px;
 }
@@ -27,7 +27,7 @@
 
 .content{
     text-align: center;
-    max-width: 1450px;
+    max-width: 90%;
     font-size: 2rem;
     margin-top: 97px;
 }
@@ -42,3 +42,23 @@
     margin: 100px 0; 
 }
 
+@media screen and (max-width:768px) {
+    .year{
+        font-size: 10rem;
+        background-position: 180px 220px;
+
+    }
+    .btn{
+        width: 60%;
+        font-size: 1rem;
+    }
+    .about_container h3{
+        font-size: 1.5rem;
+    }
+    .title{
+        font-size: 1.1rem;
+    }
+    .content{
+        font-size: 1rem;
+    }
+}
