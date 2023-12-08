@@ -14,11 +14,11 @@ export default function Home() {
     <main>
       <Header />
       <AboutUs />
-      <Image360Deg />
+      <Image360Deg />    
       <SampleProjects />
       <Customers />
-      {/* 
       <AboutAbility />
+      {/* 
       <Blog />
       <NewsField />
       <Footer /> */}

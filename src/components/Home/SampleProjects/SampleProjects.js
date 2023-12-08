@@ -77,7 +77,7 @@ const SampleProjects = () => {
                     alt={`${index}`}
                     width={650}
                     height={650}
-                    priority={index === 0}
+                    // priority={true}
                   />
                 </Dot>
               ))}
@@ -91,7 +91,7 @@ const SampleProjects = () => {
                     alt={`${index}`}
                     width={650}
                     height={650}
-                    priority={index === 0}
+                    // priority={true}
                   />
                 </Slide>
               ))}
