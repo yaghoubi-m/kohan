@@ -6,15 +6,17 @@
 }
 
 .containers{
-    height: 33.1rem;
+    aspect-ratio: 3/2;
+    height: auto;
     position: relative;
     width: 33.33%;
 }
 
+
 .container div img{
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 .mask{
     background-color: #00000066;
@@ -30,7 +32,7 @@
     /* background-color: #feb; */
     bottom: 0;
     color: #FFF;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .details p{
@@ -39,4 +41,62 @@
 
 .details p:first-child{
     border-bottom: 1px solid;
+}
+.md{
+    display: block;
+}
+.carousel{
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    .container{
+        display: none;
+    }    
+    .carousel{
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .containers{
+        width: 100%;
+        height: 100%;
+    }
+    .carousel div img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    .dotscon{
+    
+        display: block;
+    
+        margin: 0 auto;
+        margin-top: 2rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem
+    }
+    
+    .dotscon button{
+        background-color: #d6d6d6;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        outline: none;
+        border: none;
+    }
+    
+    .dotscon button:disabled{
+        background: #000;
+        border: 1px solid #000;
+    }
+    
+}
+
+@media screen and (max-width: 1024px) {
+    .details{
+        font-size: 1.2rem;
+    }
 }

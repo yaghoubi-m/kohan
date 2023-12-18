@@ -110,3 +110,89 @@
     background-color: #d9d9d9;
     /* padding: 1rem; */
 }
+
+.rate2{
+    display: none;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.dotscon{
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .container{
+        padding: 2rem;
+    }
+    .container h1{
+        font-size: 1.5rem;
+    }
+    .pc{
+        flex-direction: column-reverse;
+    }
+    .carousel_con{
+        width: 100%;
+    }
+    
+    .dc{
+        font-size: 1.2rem;
+        width: 100%;
+        border: 0;
+        padding: 3rem 0;
+        gap: 3rem;
+    }
+    .rate{
+        display: none;
+    }
+    .rate2{
+        display: flex;
+        /* display: block; */
+    }
+
+    .md{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-bottom: 2rem;
+        margin-bottom: 2rem;
+        border-bottom: 1px solid #000;
+    }
+    .all_dots{
+        display: none;
+    }
+    .dotscon{
+    
+        display: block;
+    
+        margin: 0 auto;
+        margin-top: 2rem;
+        width: 30%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .dotscon button{
+        background-color: #d6d6d6;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        outline: none;
+        border: none;
+    }
+    
+    .dotscon button:disabled{
+        background: #000;
+        border: 1px solid #000;
+    }
+}
+
+
+@media screen and (max-width:450px) {
+    .dotscon{
+        width: 55%;
+    }
+}

@@ -8,7 +8,7 @@ import logo from '../../assets/images/KohanLogo.png';
 import Link from 'next/link';
 import { IoMenuSharp } from 'react-icons/io5';
 import { useState } from 'react';
-export default function Header() {
+export default function Header({ title }) {
   const [menu, setMenu] = useState(false);
 
   return (
@@ -40,27 +40,27 @@ export default function Header() {
                 </Link>
               </li>
               <li>
-                <Link href="/" className={styles.link}>
+                <Link href="/projects" className={styles.link}>
                   Projects
                 </Link>
               </li>
               <li>
-                <Link href="/" className={styles.link}>
+                <Link href="/blogs" className={styles.link}>
                   Blogs
                 </Link>
               </li>
               <li>
-                <Link href="/" className={styles.link}>
+                <Link href="/catalog" className={styles.link}>
                   Catalog
                 </Link>
               </li>
               <li>
-                <Link href="/" className={styles.link}>
+                <Link href="/about-us" className={styles.link}>
                   About US
                 </Link>
               </li>
               <li>
-                <Link href="/" className={styles.link}>
+                <Link href="/contact-us" className={styles.link}>
                   Contact Us
                 </Link>
               </li>
@@ -68,9 +68,7 @@ export default function Header() {
           </nav>
         </div>
         <div className={styles.header_line__two}></div>
-        <p className={styles.banner_title}>
-          It has an exhibition grade from the Ministry of Industry, Mines and Trade
-        </p>
+        <p className={styles.banner_title}>{title}</p>
         <Image className={styles.header_logo} src={logo} alt="logo" />
       </header>
       <div className={styles.explore}>

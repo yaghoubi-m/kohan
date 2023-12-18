@@ -6,19 +6,21 @@
 .main_container{
     display: flex;
     justify-content: space-between;
-    padding: 0 6rem; 
+    padding: 0 2rem; 
+    padding-top: 2rem;
 }
 
 .main_container a, .main_container p{
     color: #fff;
     text-decoration: none;
-    font-size: 2.4rem;
+    font-size: 2rem;
 }
 
 .link_container{
     display: flex;
     margin-top: 5rem;
     height: 25rem;
+    gap: 8rem
 }
 
 .link_container > div{
@@ -29,7 +31,7 @@
 }
 
 .link_container > div:last-of-type{
-    margin-right: 11rem;
+    /* margin-right: 11rem; */
 }
 
 .logo{
@@ -93,4 +95,112 @@
     font-size: 1.5rem;
     padding: 4rem 0;
     text-align: center;
+}
+.md{
+    display: none;
+}
+@media screen and (max-width: 1024px) {
+
+    .main_container{
+        padding: 0 2rem;
+        flex-direction: column;
+    }
+    .main_container a, .main_container p{
+        font-size: 2rem;
+    }   
+    .link_container{
+
+        height: unset;
+        margin-bottom: 5rem;
+    }
+    .link_container div:first-child{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 3rem;
+        width: 100%;
+    }
+
+    .link_container div:last-child{
+        display: none;
+    }
+    .md{
+        display: flex;
+        /* justify-content: space-between; */
+        height: 15rem;
+        gap: 4rem;
+    }
+    .md img{
+        height: 100%;
+        width: 11rem;
+    }
+    .md > .logo{
+        display: block;
+    }
+    .md > .contact{
+        display: flex;
+        margin: 0;
+        height: 100%;
+        justify-content: space-between;
+        /* align-items: center; */
+        gap: 0;
+    }
+    .contact{
+        display: none;
+    }
+    .logo{
+        display: none;
+    }
+    .icon{
+        font-size: 2rem;
+    }
+    .sec_container{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+        font-size: 2rem;
+    }
+
+    .icons_container > .icon{
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .link_container div:first-child{
+        /* gap: 2rem;   */
+        width: 90%;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+    .main_container a, .main_container p{
+        font-size: 1rem;
+    }   
+    .sec_container{
+        font-size: 1rem;
+    }
+    .md{
+        height: 9.2rem;
+        gap: 2rem;
+    }
+    .md img{
+        width: 6.5rem;
+    }
+
+    .icons_container > .icon , .icon{
+        font-size: 1.5rem;
+    }}
+
+@media screen and (max-width: 500px) {
+    .main_container{
+        padding: 1rem;
+    }
+    .link_container div:first-child{
+        width: 100%;
+        margin: 0;
+    }
+    .main_container a{
+        font-size: .7rem;
+    }
 }

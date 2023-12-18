@@ -38,3 +38,14 @@
     justify-content: center;
     padding-bottom: 6.9rem;
 }
+
+@media screen and (max-width: 768px) {
+    .incon{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .container p{
+        font-size: 1.2rem;
+    }
+}

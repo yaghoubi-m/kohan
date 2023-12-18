@@ -17,7 +17,8 @@
     "react-dom": "latest",
     "react-icons": "^4.11.0",
     "react-photo-sphere-viewer": "^3.4.0-psv5.4.0",
-    "react-responsive-carousel": "^3.2.23"
+    "react-responsive-carousel": "^3.2.23",
+    "sharp": "^0.33.1"
   },
   "devDependencies": {
     "eslint": "latest",

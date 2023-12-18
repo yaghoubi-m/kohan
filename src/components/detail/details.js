@@ -20,7 +20,19 @@ const images = ['/s1.png', '/s3.png', '/s1.png', '/s3.png', '/s1.png', '/s3.png'
 const Details = () => {
   return (
     <section className={styles.container}>
-      <h1>غرفه سازی شرکت کراپ در نمایشگاه بین المللی تهران</h1>
+      <div className={styles.md}>
+        <h1>غرفه سازی شرکت کراپ در نمایشگاه بین المللی تهران</h1>
+        <div className={styles.rate2}>
+          <span>0 (0)</span>
+          <div className={styles.stars}>
+            <FaStar fill="#999" size="25" />
+            <FaStar fill="#999" size="25" />
+            <FaStar fill="#999" size="25" />
+            <FaStar fill="#999" size="25" />
+            <FaStar fill="#999" size="25" />
+          </div>
+        </div>
+      </div>
       <div className={styles.pc}>
         <div className={styles.dc}>
           <div>
@@ -100,6 +112,7 @@ const Details = () => {
               </div>
               <ButtonBack className={styles.btn}>{'>'}</ButtonBack>
             </div>
+            <DotGroup className={styles.dotscon} />
           </CarouselProvider>
         </div>
       </div>

@@ -1,9 +1,12 @@
 .container{
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     font-size: 1.4rem;
+    gap: 2rem;
+    padding: 2rem;
     /* margin-bottom: 10rem; */
 }
 
@@ -14,3 +17,4 @@
     align-items: center;
     gap: 1rem;
 }
+

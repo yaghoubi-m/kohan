@@ -6,10 +6,10 @@ import Catalog from '@/components/catalog/Catalog';
 const Page = () => {
   return (
     <main>
-      <Header />
+      {/* <Header /> */}
       <Catalog />
-      <NewsField />
-      <Footer />
+      {/* <NewsField /> */}
+      {/* <Footer /> */}
     </main>
   );
 };

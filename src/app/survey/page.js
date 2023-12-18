@@ -6,10 +6,10 @@ import Survey from '@/components/survey/Survey';
 const Page = () => {
   return (
     <main>
-      <Header />
+      {/* <Header /> */}
       <Survey />
-      <NewsField />
-      <Footer />
+      {/* <NewsField /> */}
+      {/* <Footer /> */}
     </main>
   );
 };

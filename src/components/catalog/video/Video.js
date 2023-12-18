@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import styles from './Video.module.css';
 
+const arr = [1, 2, 4, 435, 465, 6557, 3, 234, 14, 6, 57, 35, 23414, 35435];
 const Video = () => {
   return (
     <section className={styles.container}>
@@ -8,21 +9,11 @@ const Video = () => {
         <source src="/video.mp4"></source>
       </video>
       <div className={styles.vid_con}>
-        <div>
-          <Image src={'/play.svg'} width={60} height={60} />
-        </div>
-        <div>
-          <Image src={'/play.svg'} width={60} height={60} />
-        </div>
-        <div>
-          <Image src={'/play.svg'} width={60} height={60} />
-        </div>
-        <div>
-          <Image src={'/play.svg'} width={60} height={60} />
-        </div>
-        <div>
-          <Image src={'/play.svg'} width={60} height={60} />
-        </div>
+        {arr.map((i) => (
+          <div>
+            <Image src={'/play.svg'} width={60} height={60} alt="img" />
+          </div>
+        ))}
       </div>
     </section>
   );

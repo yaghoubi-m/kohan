@@ -8,12 +8,12 @@ import { Test } from '@/components/Projects/gallery/test';
 const Projects = () => {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <Description />
       {/* <Gallery /> */}
-      <Test />
-      <NewsField />
-      <Footer />
+      {/* <Test /> */}
+      {/* <NewsField /> */}
+      {/* <Footer /> */}
     </>
   );
 };

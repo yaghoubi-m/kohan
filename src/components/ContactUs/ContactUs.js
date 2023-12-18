@@ -4,7 +4,7 @@ const ContantUs = () => {
   return (
     <section>
       <h3 className={styles.title}>تماس باما</h3>
-      <div className={styles.container}>
+      <div className={styles.con}>
         <div className={styles.txt_con}>
           <p>واحد اداری و طراحی</p>
           <p>

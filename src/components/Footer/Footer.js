@@ -30,6 +30,24 @@ const Footer = () => {
             <Link href="/">همکاران</Link>
           </div>
         </div>
+        <div className={styles.md}>
+          <Image className={styles.logo} height={200} width={200} src={logo} alt="logo" />
+          <div className={styles.contact}>
+            {/* <p>تماس باما</p> */}
+            <div>
+              <HiOutlineLocationMarker className={styles.icon} />
+              <p>تهران خیابان آیت الله کاشانی بلوار اباذر ساختمان آریا واحد ۲۰۱</p>
+            </div>
+            <div>
+              <FiPhone className={styles.icon} />
+              <p>شماره تلفن ۰۲۱۳۷۵۹۶</p>
+            </div>
+            <div>
+              <FiMail className={styles.icon} />
+              <p>آدرس ایمیل : info@kohan.ir </p>
+            </div>
+          </div>
+        </div>
         <Image className={styles.logo} height={200} width={200} src={logo} alt="logo" />
         <div className={styles.contact}>
           <p>تماس باما</p>

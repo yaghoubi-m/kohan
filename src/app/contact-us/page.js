@@ -7,11 +7,10 @@ import NewsField from '@/components/Home/newsfield/NewsField';
 const Page = () => {
   return (
     <main>
-      <Header />
+      {/* <Header /> */}
       <ContantUs />
       <ImgForm />
-      <NewsField />
-      <Footer />
+      {/* <Footer /> */}
     </main>
   );
 };

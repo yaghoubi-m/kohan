@@ -22,7 +22,7 @@ const baseUrl = 'https://photo-sphere-viewer-data.netlify.app/assets/';
 // );
 const Image360Deg = () => {
   const photoSphereRef = React.createRef(<ReactPhotoSphereViewer />);
-
+  // console.log('sss');
   useEffect(() => {
     if (!photoSphereRef.current) return;
     photoSphereRef.current.animate({

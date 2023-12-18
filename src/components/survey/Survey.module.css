@@ -1,4 +1,3 @@
-
 .surveyContainer h1{
     text-align: center;
     margin: 10rem 0;
@@ -42,4 +41,10 @@
 
 .question{
     padding-right: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .table{
+        font-size: 1rem;
+    }
 }

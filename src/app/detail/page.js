@@ -7,11 +7,11 @@ import Details from '@/components/detail/details';
 const Detail = () => {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <Details />
       <Comments />
-      <NewsField />
-      <Footer />
+      {/* <NewsField /> */}
+      {/* <Footer /> */}
     </>
   );
 };

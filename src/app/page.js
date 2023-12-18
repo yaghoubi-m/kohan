@@ -12,16 +12,15 @@ import NewsField from '@/components/Home/newsfield/NewsField';
 export default function Home() {
   return (
     <main>
-      <Header />
+      {/* <Header /> */}
       <AboutUs />
-      <Image360Deg />    
+      <Image360Deg />
       <SampleProjects />
       <Customers />
       <AboutAbility />
-      {/* 
       <Blog />
       <NewsField />
-      <Footer /> */}
+      {/* <Footer /> */}
     </main>
   );
 }

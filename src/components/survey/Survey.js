@@ -24,12 +24,13 @@ const Survey = () => {
       ...prevResponses,
       ratings: rating,
     }));
+
+    console.log('Survey Responses:', responses);
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     // Handle form submission logic here
-    console.log('Survey Responses:', responses);
   };
 
   return (
@@ -61,9 +62,9 @@ const Survey = () => {
                 <input
                   type="checkbox"
                   name="ratings"
-                  value="bad"
-                  checked={responses.ratings === 'bad'}
-                  onChange={() => handleRatingChange('bad')}
+                  value="normal"
+                  checked={responses.ratings === 'normal'}
+                  onChange={() => handleRatingChange('normal')}
                   className={styles.radioInput}
                 />
               </td>
@@ -71,9 +72,9 @@ const Survey = () => {
                 <input
                   type="checkbox"
                   name="ratings"
-                  value="bad"
-                  checked={responses.ratings === 'bad'}
-                  onChange={() => handleRatingChange('bad')}
+                  value="good"
+                  checked={responses.ratings === 'good'}
+                  onChange={() => handleRatingChange('good')}
                   className={styles.radioInput}
                 />
               </td>
@@ -81,9 +82,9 @@ const Survey = () => {
                 <input
                   type="checkbox"
                   name="ratings"
-                  value="bad"
-                  checked={responses.ratings === 'bad'}
-                  onChange={() => handleRatingChange('bad')}
+                  value="very good"
+                  checked={responses.ratings === 'very good'}
+                  onChange={() => handleRatingChange('very good')}
                   className={styles.radioInput}
                 />
               </td>
@@ -104,9 +105,9 @@ const Survey = () => {
                 <input
                   type="checkbox"
                   name="ratings"
-                  value="bad"
-                  checked={responses.ratings === 'bad'}
-                  onChange={() => handleRatingChange('bad')}
+                  value="normal"
+                  checked={responses.ratings === 'normal'}
+                  onChange={() => handleRatingChange('normal')}
                   className={styles.radioInput}
                 />
               </td>
@@ -114,9 +115,9 @@ const Survey = () => {
                 <input
                   type="checkbox"
                   name="ratings"
-                  value="bad"
-                  checked={responses.ratings === 'bad'}
-                  onChange={() => handleRatingChange('bad')}
+                  value="good"
+                  checked={responses.ratings === 'good'}
+                  onChange={() => handleRatingChange('good')}
                   className={styles.radioInput}
                 />
               </td>
@@ -124,9 +125,9 @@ const Survey = () => {
                 <input
                   type="checkbox"
                   name="ratings"
-                  value="bad"
-                  checked={responses.ratings === 'bad'}
-                  onChange={() => handleRatingChange('bad')}
+                  value="very good"
+                  checked={responses.ratings === 'very good'}
+                  onChange={() => handleRatingChange('very good')}
                   className={styles.radioInput}
                 />
               </td>

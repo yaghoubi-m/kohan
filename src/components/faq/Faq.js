@@ -22,7 +22,7 @@ const Faq = ({ question, answers, last }) => {
   const Answer = {
     padding: '0',
     fontSize: '1.6rem',
-    borderBottom: last ? '0' : '1px solid #000',
+    // borderBottom: last ? '0' : '1px solid #000',
     // width: '90%',
     // margin: '0 auto',
     backgroundColor: '#eee',
@@ -36,7 +36,7 @@ const Faq = ({ question, answers, last }) => {
 
   return (
     <>
-      <div style={{ ...FAQItem }}>
+      <div className={styles.container} style={{ ...FAQItem }}>
         <div className={styles.dropdown} style={Question} onClick={toggleFAQ}>
           <p>{question}</p>
           <IoIosArrowDown />

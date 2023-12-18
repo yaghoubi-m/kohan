@@ -1,7 +1,6 @@
 .container{
-    width: 90%;
-    margin: 0 auto;
-    margin-top: 10rem;
+    border-bottom: 1px solid #000
+
 }
 
 .container h1{

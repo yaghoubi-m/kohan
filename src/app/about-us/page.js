@@ -11,13 +11,13 @@ import Footer from '@/components/Footer/Footer';
 const About = () => {
   return (
     <main className={styles.container}>
-      <Header />
+      {/* <Header /> */}
       <Hero />
       <Content />
       <WhyUs />
       <Employ />
-      <NewsField />
-      <Footer />
+      {/* <NewsField /> */}
+      {/* <Footer /> */}
     </main>
   );
 };
